@@ -1,8 +1,10 @@
 import "./App.css";
 import React, { Component } from "react";
-import SearchBox from "./components/search-box/search-box";
+// import SearchBox from "./components/search-box/search-box";
+import RequestCard from "./components/request-card-component/requestCard";
 import Navbar from "./components/navbar/navbar";
-import CardList from "./components/card-list/card-list.component";
+// import CardList from "./components/card-list/card-list.component";
+import CardList from "./components/students-card-list/card-list.component";
 class App extends Component {
   constructor() {
     super();
@@ -66,6 +68,7 @@ class App extends Component {
           );
         })} */}
         <CardList students={filteredStudents} />
+        {/* <RequestCard /> */}
       </div>
     );
   }

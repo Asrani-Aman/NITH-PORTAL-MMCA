@@ -1,8 +1,6 @@
 import { Component } from "react";
 import "./card-list.styles.css";
-import DoneIcon from "@mui/icons-material/Done";
-import CloseIcon from "@mui/icons-material/Close";
-import PauseOutlinedIcon from "@mui/icons-material/PauseOutlined";
+
 class CardList extends Component {
   render() {
     console.log("render from Cardlist");
@@ -21,12 +19,15 @@ class CardList extends Component {
                 ></img>
               </div>
               <div className="name_section">
-                <h2>{`${name} (${roll})`}</h2>
+                <h2>{`${name}`}</h2>
               </div>
               <div className="reason_section">
-                <p> Reason:-Reason here</p>
+                <p>
+                  {" "}
+                  <h2>{`${roll}`}</h2>
+                </p>
               </div>
-              <div>
+              {/* <div>
                 <div class="inline-flex rounded-md shadow-sm" role="group">
                   <form
                     method="POST"
@@ -55,7 +56,7 @@ class CardList extends Component {
                     HOLD
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
           );
         })}

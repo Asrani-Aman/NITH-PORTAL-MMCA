@@ -38,10 +38,11 @@
   /* background-color: #00008b; */
   background-color: rgb(30 58 138);
   box-shadow: rgba(0, 0, 0, 0.7);
-  border-radius: 10%;
+  border-radius: 10% 25%;
   color: white;
   margin-top: 1.25rem;
   height: 25rem;
+  width: 17rem;
   transition: all ease 0.2s;
 }
 .card-container:hover {
