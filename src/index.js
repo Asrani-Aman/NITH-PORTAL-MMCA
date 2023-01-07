@@ -7,13 +7,15 @@ import reportWebVitals from "./reportWebVitals";
 import RequestCard from "./components/request-card-component/requestCard";
 import AcceptedCard from "./components/accepted/Accepted";
 import Denied from "./components/denied/Denied";
+import Navbar from "./components/navbar/navbar";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <RequestCard /> */}
-    <AcceptedCard />
+    {/* <AcceptedCard /> */}
     {/* <Denied /> */}
+    <Navbar />
   </React.StrictMode>
 );
 

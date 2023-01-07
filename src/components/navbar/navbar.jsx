@@ -13,7 +13,8 @@ class Navbar extends Component {
       // event.preventDefault();
       console.log(event);
       console.log(navLinks);
-      navLinks.classList.toggle("top-[10%]");
+      navLinks.classList.toggle("top-[15%]");
+      this.forceUpdate();
     };
 
     return (
@@ -23,11 +24,11 @@ class Navbar extends Component {
             <div>
               <img src={logo} className="w-16 rounded-full"></img>
             </div>
-            <div className="md:static md:min-h-fit  md:w-auto absolute left-0 top-[-100%] min-h-[60vh] w-full bg-blue-900 flex items-center navLinks text-white">
+            <div className="md:static md:min-h-fit  md:w-auto absolute left-0  min-h-[60vh] w-full bg-blue-900 flex items-center navLinks text-white top-[-100%] transition-all">
               <ul className="flex md:flex-row flex-col items-center md:gap-x-0.5 gap-y-10">
                 <li>
                   <a href="#" className="mx-2 hover:text-gray-500">
-                    Studens
+                    Students
                   </a>
                 </li>
                 <li>
